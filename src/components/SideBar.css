@@ -1,0 +1,48 @@
+.sidebar {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.sidebar-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  transition: color 0.3s ease;
+}
+
+.sidebar-menu-item:hover {
+  color: #007bff;
+}
+
+.arrow {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Make sidebar disappear on smaller screens */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}

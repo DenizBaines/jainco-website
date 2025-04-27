@@ -1,0 +1,220 @@
+.management-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .page-content {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .management-content {
+    flex: 1;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 15px 30px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    background-color: #4a9cff;
+    color: white;
+  }
+  
+  .tab svg {
+    font-size: 14px;
+  }
+  
+  /* Key People tab styles */
+  .management-list {
+    padding: 10px 20px;
+  }
+  
+  .management-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .management-item:last-child {
+    border-bottom: none;
+  }
+  
+  .expand-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    border: 1px solid #333;
+    cursor: pointer;
+  }
+  
+  .management-item h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .management-item-content {
+    padding: 0 0 20px 40px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .management-item-content p {
+    line-height: 1.6;
+    color: #444;
+    margin: 0;
+  }
+  
+  /* Company Structure tab styles */
+  .company-structure {
+    padding: 10px 20px;
+  }
+  
+  .company-structure h2 {
+    font-size: 18px;
+    margin: 30px 0 15px;
+    font-weight: 600;
+  }
+  
+  .company-structure h3 {
+    font-size: 16px;
+    margin: 20px 0 15px;
+    font-weight: 600;
+  }
+  
+  .board-table, .structure-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .board-row, .structure-row {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .board-name {
+    flex: 1;
+    padding: 15px 10px;
+  }
+  
+  .board-title {
+    flex: 1;
+    padding: 15px 10px;
+  }
+  
+  .position {
+    width: 50px;
+    padding: 12px 10px;
+  }
+  
+  .role {
+    flex: 1;
+    padding: 12px 10px;
+  }
+  
+  .count {
+    width: 80px;
+    text-align: right;
+    padding: 12px 10px;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    width: 300px;
+    flex-shrink: 0;
+  }
+  
+  .sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .sidebar-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .sidebar-item.active {
+    background-color: #f5f5f5;
+    font-weight: 500;
+  }
+  
+  .chevron {
+    color: #4a9cff;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 992px) {
+    .page-content {
+      flex-direction: column;
+    }
+    
+    .sidebar {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .tabs {
+      flex-direction: column;
+    }
+    
+    .board-row, .structure-row {
+      flex-direction: column;
+    }
+    
+    .board-name, .board-title, .position, .role, .count {
+      width: 100%;
+      padding: 8px 10px;
+    }
+    
+    .count {
+      text-align: left;
+    }
+    
+    .position {
+      font-weight: bold;
+    }
+  }

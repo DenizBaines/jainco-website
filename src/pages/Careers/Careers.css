@@ -1,0 +1,68 @@
+.careers-page {
+  padding: 40px 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.page-title {
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #2c3e50;
+  text-transform: uppercase;
+  text-align: center;
+ 
+}
+
+.careers-image-container {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.careers-main-image {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.job-posting {
+  text-align: justify;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 14px rgba(0,0,0,0.05);
+}
+
+.job-posting h2 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  color: #34495e;
+}
+
+.job-posting p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.email-note {
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .careers-main-image {
+    max-width: 100%;
+  }
+
+  .job-posting {
+    padding: 16px;
+  }
+}
