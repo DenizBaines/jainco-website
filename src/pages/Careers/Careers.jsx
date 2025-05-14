@@ -3,6 +3,7 @@ import './Careers.css';
 
 const Careers = () => {
   return (
+    <div className="careers-page-iso">
     <div className="careers-page">
       <h1 className="page-title">CAREERS</h1>
 
@@ -39,6 +40,8 @@ const Careers = () => {
         </p>
       </div>
     </div>
+    </div>
+
   );
 };
 

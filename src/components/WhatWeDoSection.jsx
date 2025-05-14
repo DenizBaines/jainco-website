@@ -63,7 +63,12 @@ const WhatWeDoSection = () => {
   ];
 
   return (
+    
+   
+    
     <section className="what-we-do-section">
+        
+        
       <h2 className="section-title">WHAT WE DO</h2>
 
       <div className="service-cards-container">

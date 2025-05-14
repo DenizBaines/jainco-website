@@ -1,25 +1,26 @@
 import React, { useState } from "react";
 import "./NavigationBar.css";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaBars, FaTimes } from "react-icons/fa";
 
 const NavigationBar = () => {
-  const [activeDropdown, setActiveDropdown] = useState(null);
-
-  const handleDropdown = (tabName) => {
-    if (activeDropdown === tabName) {
-      setActiveDropdown(null);
-    } else {
-      setActiveDropdown(tabName);
-    }
-  };
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const menuItems = [
     { name: "Home" },
-    { name: "About Us", dropdown: ["Who We Are", "Our Team", "Our History"] },
-    { name: "What We Do", dropdown: ["Water Treatment Plant", "Product 2", "Product 3"] },
-    { name: "Operations", dropdown: ["Operation 1", "Operation 2"] },
-    { name: "Investors", dropdown: ["Reports", "Announcements"] },
-    { name: "CIRP" },
+    {
+      name: "About Us",
+      dropdown: ["Who We Are", "Our Team", "Our History"],
+    },
+    {
+      name: "What We Do",
+      dropdown: [
+        "Water Treatment Plant",
+        "Plumbing and Sanitation",
+        "Drainage System",
+        "Sewerage Treatment Plants",
+        "Water Transmission System",
+      ],
+    },
     { name: "Contact Us" },
     { name: "Careers" },
   ];
@@ -27,19 +28,20 @@ const NavigationBar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src="/images/logo.png" alt="Logo" />
+        <a href="/">
+          <img src="/images/logo.png" alt="Logo" />
+        </a>
       </div>
-      <ul className="navbar-menu">
+
+      <div className="navbar-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+        {mobileMenuOpen ? <FaTimes /> : <FaBars />}
+      </div>
+
+      <ul className={`navbar-menu ${mobileMenuOpen ? "active" : ""}`}>
         {menuItems.map((item, index) => (
-          <li
-            key={index}
-            className={`navbar-item ${
-              item.name === "Home" ? "active" : ""
-            }`}
-            onClick={() => item.dropdown && handleDropdown(item.name)}
-          >
+          <li key={index} className="navbar-item">
             {item.name}
-            {item.dropdown && activeDropdown === item.name && (
+            {item.dropdown && (
               <div className="dropdown-menu">
                 {item.dropdown.map((subItem, idx) => (
                   <div key={idx} className="dropdown-item">
@@ -51,6 +53,7 @@ const NavigationBar = () => {
           </li>
         ))}
       </ul>
+
       <div className="navbar-search">
         <FaSearch className="search-icon" />
       </div>

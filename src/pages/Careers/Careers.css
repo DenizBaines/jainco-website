@@ -1,10 +1,16 @@
+.careers-page-iso {
+  background-color: #B2FFFF;
+}
+
 .careers-page {
   padding: 40px 20px;
-  max-width: 960px;
+  
+  
   margin: 0 auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
   text-align: center;
+  background-color: #B2FFFF;
 }
 
 .page-title {

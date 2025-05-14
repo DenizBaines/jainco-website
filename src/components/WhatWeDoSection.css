@@ -1,7 +1,9 @@
 .what-we-do-section {
     padding: 60px 20px;
-    background-color: #fff;
+    background-color: #B2FFFF;
   }
+
+  
   
   .section-title {
     text-align: center;
@@ -49,6 +51,10 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
   
   .service-card:hover {
@@ -161,3 +167,5 @@
     color: inherit;
   }
   
+
+ /*  RUz3thExEtu3On9kUhl@  */

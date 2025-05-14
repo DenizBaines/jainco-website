@@ -28,7 +28,7 @@ const Testimonial = () => {
 
   return (
     <div className="testimonial-page">
-      <h2 className="testimonial-heading">TESTIMONIALS AND CERTIFICATES</h2>
+      <h2 className="testimonial-heading">[ TESTIMONIALS AND CERTIFICATES ]</h2>
 
       <div className="cert-grid">
         {certificates.map((image, index) => (

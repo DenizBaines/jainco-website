@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom';
 
 const CompanySummary = () => {
   return (
+    <div className="company-summary-iso">
     <div className="company-summary-container">
       <div className="company-header">
         <h1>
-          JAINCO BUILDCON PRIVATE LIMITED <br />
+          [ JAINCO BUILDCON PRIVATE LIMITED ] <br />
           <span>(FORMERLY JAINCO BUILDCON LIMITED)</span>
         </h1>
         <Link
@@ -97,6 +98,8 @@ const CompanySummary = () => {
         </p>
        
         </div>
+
+    </div>
 
     </div>
   );

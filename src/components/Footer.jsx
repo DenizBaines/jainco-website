@@ -18,8 +18,8 @@ const Footer = () => {
           <h3>NAVIGATION</h3>
           <ul className="footer-links">
             <li><a href="/">Home</a></li>
-            <li><a href="/company">Company Summary</a></li>
-            <li><a href="/testimonials">Testimonials and Certificates</a></li>
+            <li><a href="/company-summary">Company Summary</a></li>
+            <li><a href="/testimonial">Testimonials and Certificates</a></li>
             <li><a href="/projects">Projects</a></li>
             <li><a href="/infrastructure">Our Infrastructure</a></li>
             <li><a href="/consultation">Consultation Wing</a></li>
@@ -38,7 +38,7 @@ const Footer = () => {
           <p className="contact-info">
             <strong>Telephone:</strong> (0) 011-27478097, 011-27479430, 011-27478800
           </p>
-          <p className="contact-info">
+          <p className="contact-info" style={{color: 'black'}}>
             <strong>E-Mail:</strong> <a href='info@jaincogroup.com'>info@jaincogroup.com</a>
           </p>
           <p className="contact-info">

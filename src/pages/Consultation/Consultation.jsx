@@ -3,6 +3,7 @@ import './Consultation.css';
 
 const Consultation = () => {
   return (
+    <div className="consultation-iso">
     <div className="consultation-page">
       <div className="consultation-container">
         <h1 className="page-title">CONSULTATION WING</h1>
@@ -31,6 +32,7 @@ const Consultation = () => {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };

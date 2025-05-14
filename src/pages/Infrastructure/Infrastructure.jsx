@@ -44,6 +44,7 @@ const Infrastructure = () => {
   ];
 
   return (
+    <div className="infra-iso">
     <div className="infrastructure-container">
       <header className="page-header">
         <h1>OUR INFRASTRUCTURE</h1>
@@ -67,6 +68,7 @@ const Infrastructure = () => {
           </table>
         </div>
       </div>
+    </div>
     </div>
   );
 };

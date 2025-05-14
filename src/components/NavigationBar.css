@@ -4,13 +4,21 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px 40px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: #82eeFD;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 /* Logo */
 .navbar-logo img {
   height: 50px;
+}
+
+/* Toggle icon for mobile */
+.navbar-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /* Menu list */
@@ -31,27 +39,32 @@
 }
 
 /* Active tab (Home) */
-.navbar-item.active {
+.navbar-item:first-child {
   color: red;
 }
 
-/* On hover */
+/* Hover state */
 .navbar-item:hover {
   color: red;
 }
 
-/* Dropdown Menu */
+/* Dropdown container */
 .dropdown-menu {
+  display: none;
   position: absolute;
-  top: 45px;
+  top: 100%;
   left: 0;
   background: white;
-  box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   padding: 10px 0;
   min-width: 180px;
   z-index: 100;
-  animation: fadeIn 0.3s ease;
+}
+
+/* Show dropdown on hover */
+.navbar-item:hover .dropdown-menu {
+  display: block;
 }
 
 /* Dropdown items */
@@ -60,21 +73,69 @@
   color: #333;
   font-size: 15px;
   transition: background 0.2s;
+  white-space: nowrap;
 }
 
 .dropdown-item:hover {
   background-color: #f5f5f5;
 }
 
-/* Search Icon */
+/* Search icon */
 .navbar-search {
   font-size: 18px;
   color: #4b4b4b;
   cursor: pointer;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Responsive layout */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    background-color: #82eeFD;
+    padding: 10px 0;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-item {
+    width: 100%;
+    padding: 12px 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .navbar-item:hover .dropdown-menu {
+    position: relative;
+    box-shadow: none;
+    border-radius: 0;
+    padding-left: 20px;
+    background: #f9f9f9;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+
+  .navbar-item:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-search {
+    width: 100%;
+    margin-top: 10px;
+    text-align: right;
+  }
 }

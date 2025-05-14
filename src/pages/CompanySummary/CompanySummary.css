@@ -1,9 +1,13 @@
+.company-summary-iso {
+  background-color: #B2FFFF;
+}
+
 .company-summary-container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 2rem 1.5rem;
     font-family: 'Segoe UI', sans-serif;
-    background-color: #fff;
+    background-color: #B2FFFF;
     color: #222;
   }
   

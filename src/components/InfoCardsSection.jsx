@@ -4,6 +4,7 @@ import { FaInfo, FaUsers, FaTrophy, FaCog } from 'react-icons/fa';
 
 const InfoCardsSection = () => {
   return (
+  
     <section className="info-cards-section">
       <div className="info-cards-container">
         <div className="info-card">

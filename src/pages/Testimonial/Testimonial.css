@@ -1,6 +1,6 @@
 .testimonial-page {
     padding: 40px;
-    background-color: #f9f9f9;
+    background-color: #B2FFFF;
   }
   
   .testimonial-heading {
@@ -8,7 +8,7 @@
     font-weight: 600;
     text-align: center;
     margin-bottom: 30px;
-    color: #2d2d2d;
+    color: #151E30;
   }
   
   .cert-grid {
@@ -20,7 +20,7 @@
   
   .cert-card {
     cursor: pointer;
-    border: 3px solid #111;
+    border: 3px solid #151E30;
     padding: 5px;
     transition: transform 0.2s;
   }

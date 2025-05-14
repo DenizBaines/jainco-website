@@ -1,5 +1,5 @@
 .footer {
-    background-color: #222;
+    background-color: #002E5D;
     color: #fff;
     padding: 40px 0 0 0;
     font-family: Arial, sans-serif;
@@ -60,6 +60,7 @@
   .contact-info {
     margin-bottom: 10px;
     color: #fff ;
+    
   }
   
   .contact-info strong {
