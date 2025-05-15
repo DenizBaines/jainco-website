@@ -20,21 +20,21 @@ const DrainageSystem = () => {
           Our Drainage Systems are meticulously designed to manage stormwater and wastewater efficiently. 
           With expert engineering, we ensure proper water flow, reduce flooding risks, and support sustainable urban development. 
           From underground piping networks to surface drainage structures, we deliver complete and reliable solutions.
-        </p>
+        </p> <br />
       
 
         <p>
         Jainco Group specializes in designing and implementing efficient drainage systems that 
         ensure the smooth outflow of wastewater and rainwater, protecting buildings, roads, and public 
         spaces from flooding, waterlogging, and structural damage.
-        </p>
+        </p> <br />
         
         <p>
         Our drainage solutions are engineered using modern techniques and high-quality 
         materials to handle both surface and sub-surface water. We construct stormwater drains, 
         underground sewer lines, and slope-based drainage networks that are durable, low-maintenance, 
         and compliant with all relevant standards.
-        </p>
+        </p> <br />
        
         <p>
         Whether it's for a residential colony, an industrial estate, or large-scale public infrastructure, 
@@ -42,7 +42,7 @@ const DrainageSystem = () => {
         sediment control, and long-term reliability ensures the effective management of wastewater and rainwater in any environment.
         </p>
        
-       
+        <br />
         <p>
         ✅ Key Features of Our Drainage Systems :-
         </p>
@@ -54,8 +54,8 @@ const DrainageSystem = () => {
           <li>Backflow prevention and odor control measures</li>
           <li>Routine inspection chambers for easy maintenance</li>
           <li>Compliance with municipal and environmental standards</li>
-          </ul>
-
+          </ul> <br />
+    
           <p>
           🌍 Applications & Use Cases :-
         </p>
@@ -66,7 +66,7 @@ const DrainageSystem = () => {
           <li>Industrial areas and manufacturing zones</li>
           <li>Educational campuses and hospitals</li>
           <li> Parks, gardens, and public spaces</li>
-          </ul>
+          </ul> <br />
 
           <p>
           At Jainco Group, our drainage systems are more than just pipelines—they are the backbone 

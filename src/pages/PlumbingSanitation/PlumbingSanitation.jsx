@@ -22,24 +22,24 @@ const PlumbingSanitation = () => {
           commercial, and industrial projects. From water supply systems to drainage and 
           sanitation facilities, our team ensures high standards of hygiene, efficiency, and 
           long-lasting reliability. Our commitment to quality guarantees a healthier and cleaner environment for all.
-        </p>
-
+        </p> <br />
+         
         <p>
         Jainco Group offers comprehensive plumbing and sanitation solutions tailored 
         for modern infrastructure. From high-rise buildings to industrial facilities, 
         we ensure the seamless supply and drainage of water using durable materials and industry-standard techniques.
-        </p>
+        </p> <br />
         
         <p>
         Our services cover the full scope—from system design and pipeline layout to installation, 
         testing, and commissioning. We emphasize quality workmanship, leak-proof joints, and sustainable 
         water management to minimize maintenance and maximize efficiency.
-        </p>
+        </p> <br />
         <p>
         Whether it’s fresh water supply, sewage systems, stormwater drainage, or 
         greywater recycling, we provide reliable and hygienic solutions that meet the demands 
         of today’s urban and rural environments. Safety, hygiene, and performance remain our top priorities in every project.
-        </p>
+        </p> <br />
         <p>
         ✅ Key Features of Our Plumbing & Sanitation Services :-
         </p>
@@ -51,7 +51,7 @@ const PlumbingSanitation = () => {
           <li>Concealed and exposed piping for both aesthetics and accessibility</li>
           <li>Advanced water-saving fixtures and fittings</li>
           <li>Regular maintenance and AMC (Annual Maintenance Contract) services</li>
-          </ul>
+          </ul> <br />
 
           <p>
           🌍 Applications & Use Cases :-
@@ -64,7 +64,7 @@ const PlumbingSanitation = () => {
           <li> Schools, colleges, and institutions</li>
           <li>Religious and community centers</li>
           </ul>
-
+          <br />
           <p>
           At Jainco Group, we go beyond basic plumbing to deliver systems that are efficient, 
           hygienic, and built to last. Our experienced team ensures that every project meets safety 

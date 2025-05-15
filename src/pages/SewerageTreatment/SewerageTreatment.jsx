@@ -20,22 +20,22 @@ const SewerageTreatment = () => {
           Our Sewerage Treatment Plants are engineered to treat wastewater effectively and sustainably. 
           With advanced filtration, biological, and chemical treatment processes, these plants ensure that harmful 
           contaminants are removed before water is discharged or reused, helping to protect ecosystems and public health.
-        </p>
+        </p> <br />
 
         <p>
         Jainco Group provides cutting-edge Sewerage Treatment Plants (STPs) 
         designed to treat and recycle wastewater efficiently and sustainably. 
         Our systems are engineered to remove contaminants, reduce harmful bacteria, 
         and make treated water suitable for reuse or safe discharge.
-        </p>
+        </p> <br />
         
         <p>
         Our STPs use a combination of physical, biological, and chemical processes such as aeration, sedimentation, and disinfection to treat sewage in compliance with CPCB norms and environmental regulations. We offer both conventional and compact modular designs, suitable for small-scale to large municipal applications.
-        </p>
+        </p> <br />
        
         <p>
         From design to installation and maintenance, we deliver complete, customized STP solutions that help clients reduce their environmental footprint, save water, and ensure public health and hygiene. Our plants are built for performance, durability, and easy operation.
-        </p>
+        </p> <br />
        
        
         <p>
@@ -49,7 +49,7 @@ const SewerageTreatment = () => {
           <li>Energy-efficient blowers and motors</li>
           <li>Automated control panels with real-time monitoring</li>
           <li>Low maintenance and long plant life</li>
-          </ul>
+          </ul> <br />
 
           <p>
           🌍 Applications & Use Cases :-
@@ -62,7 +62,7 @@ const SewerageTreatment = () => {
           <li>Hospitals and healthcare facilities</li>
           <li>Hotels and resorts</li>
           <li>Municipal sewage treatment projects</li>
-          </ul>
+          </ul> <br />
 
           <p>
           At Jainco Group, we believe wastewater is a resource—not waste. Our Sewerage Treatment Plants are built to recycle sewage into clean, usable water, helping communities move toward zero-discharge and eco-friendly practices. With reliable technology, expert engineering, and a commitment to sustainability, Jainco Group continues to lead the way in modern sewage management.

@@ -22,22 +22,22 @@ const WaterTreatmentPlants = () => {
           through innovative purification methods. We utilize filtration, chemical dosing, 
           sedimentation, and disinfection technologies to treat water from various sources, 
           ensuring compliance with regulatory standards and supporting public health and sustainable development.
-        </p>
+        </p> <br />
         <p>
         Jainco Group is dedicated to addressing the global demand for clean water through 
         innovative water treatment technologies. Our expertise lies in delivering advanced 
         systems that purify and recycle water efficiently, reducing environmental impact and 
         supporting water conservation efforts.
-        </p>
+        </p> <br />
         <p>
         We offer end-to-end solutions, from design and engineering to commissioning and maintenance, 
         ensuring that our clients receive reliable and future-ready systems. Whether it’s treating river water, 
         groundwater, or industrial effluents, our plants are engineered for durability, compliance, and performance.
-        </p>
+        </p> <br />
         <p>
         With a focus on sustainable development, Jainco Group integrates cutting-edge automation, 
         smart monitoring tools, and eco-friendly materials to build systems that not only meet but exceed industry standards.
-        </p>
+        </p> <br />
         <p>
            ✅ Key Features of Our Water Treatment Plants :-
         </p>
@@ -48,7 +48,7 @@ const WaterTreatmentPlants = () => {
           <li>Fully automated control panels with remote monitoring capabilities</li>
           <li>Corrosion-resistant materials for longer life and minimal maintenance</li>
           <li>On-site training and technical support for plant operators</li>
-          </ul>
+          </ul> <br />
 
           <p>
           🌍 Applications & Use Cases :-
@@ -60,7 +60,7 @@ const WaterTreatmentPlants = () => {
           <li>Hospitals and healthcare centers</li>
           <li>Educational institutions</li>
           <li>Agricultural and irrigation systems</li>
-          </ul>
+          </ul> <br />
 
           <p>
           At Jainco Group, we believe that access to clean and safe water is a fundamental right, 
