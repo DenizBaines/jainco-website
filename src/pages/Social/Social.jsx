@@ -18,6 +18,8 @@ const Social = () => {
   //];
 
   return (
+
+    <div className="social-page-iso">
     <div className="careers-page">
       <div className="careers-container">
         <div className="main-content">
@@ -68,6 +70,7 @@ const Social = () => {
         </div>
         */}
       </div>
+    </div>
     </div>
   );
 };

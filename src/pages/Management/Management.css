@@ -81,6 +81,7 @@
   .management-item-content {
     padding: 0 0 20px 40px;
     border-bottom: 1px solid #ddd;
+    text-align: justify;
   }
   
   .management-item-content p {
@@ -129,17 +130,20 @@
   .position {
     width: 50px;
     padding: 12px 10px;
+    text-align: left;
   }
   
   .role {
     flex: 1;
     padding: 12px 10px;
+    text-align: left;
   }
   
   .count {
     width: 80px;
     text-align: right;
     padding: 12px 10px;
+    flex-wrap: nowrap;
   }
   
   /* Sidebar styles */

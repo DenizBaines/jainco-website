@@ -57,30 +57,58 @@ const Management = () => {
                 <div className="expand-icon" onClick={() => toggleExpand('kg-malik')}>
                   {expandedItems['kg-malik'] ? <FaMinus /> : <FaPlus />}
                 </div>
-                <h3>ER. K.G. MALIK, CHIEF EXECUTIVE OFFICER</h3>
+                <h3>MR. K.G. MALIK, CHIEF EXECUTIVE OFFICER</h3>
               </div>
               
               {expandedItems['kg-malik'] && (
                 <div className="management-item-content">
                   <p>
-                    Er. K. G. Malik is the President of the Construction Division of Jainco Buildcon Private Limited. He is graduate (AMIE) in Civil Engineering in 1982 from the Institution of Engineers, Kolkatta. He worked in various Government and Private organizations at various levels.
+                  Mr. K. G. Malik is the President of the Construction Division of Jainco Buildcon Private Limited. He is graduate (AMIE) 
+                  in Civil Engineering in 1982 from the Institution of Engineers, Kolkatta. He worked in various capacities for 39 years 
+                  in Delhi Jal Board and finally retired as Superintendent Engineer (Civil) in May 2005. During his active career, he has been 
+                  responsible for the construction of Sewage Pumping Station, Sewage Treatment Plants, underground reservoirs, laying of water 
+                  mains as well as laying of sewer lines up to 1800mm dia and maintenance of water distribution system. He has been responsible 
+                  for planning and central tendering system of the Delhi Jal Board. <br /> 
+                  He is an active engineer. He joined this company as Vice President (Construction Division) in June 2007.
                   </p>
                 </div>
               )}
               
               <div className="management-item">
-                <div className="expand-icon" onClick={() => toggleExpand('yatin-jain')}>
-                  {expandedItems['yatin-jain'] ? <FaMinus /> : <FaPlus />}
+                <div className="expand-icon" onClick={() => toggleExpand('naresh-jain')}>
+                  {expandedItems['naresh-jain'] ? <FaMinus /> : <FaPlus />}
                 </div>
-                <h3>ER. YATIN JAIN, MANAGING DIRECTOR</h3>
+                <h3>MR. YATIN JAIN, MANAGING DIRECTOR</h3>
               </div>
               
-              <div className="management-item">
-                <div className="expand-icon" onClick={() => toggleExpand('praveen-bhargava')}>
-                  {expandedItems['praveen-bhargava'] ? <FaMinus /> : <FaPlus />}
+              {expandedItems['naresh-jain'] && (
+                <div className="management-item-content">
+                  <p>
+                  Mr. Yatin Jain is Managing Director of Jainco Buildcon Private Limited. He is B.Tech (Civil), completed his masters in business administration (FMB) from SP JAIN INSTITUTE OF MANAGEMENT, Mumbai. He is currently heading the Administration, Marketing, Construction, HR and procurement of the company.
+                  </p>
                 </div>
-                <h3>ER. PRAVEEN BHARGAVA- M.S (CIVIL ENGG.), DIRECTOR (TECHNICAL)</h3>
+              )}
+              
+              <div className="management-item">
+                <div className="expand-icon" onClick={() => toggleExpand('naresh-jain')}>
+                  {expandedItems['naresh-jain'] ? <FaMinus /> : <FaPlus />}
+                </div>
+                <h3>MR. PRAVEEN BHARGAVA - M.S. (CIVIL ENGG.), DIRECTOR (TECNICAL)</h3>
               </div>
+              
+              {expandedItems['naresh-jain'] && (
+                <div className="management-item-content">
+                  <p>
+                  Mr. Praveen Bhargava retired as Technical Head of water sector after 35 years of his service in Delhi 
+                  Jal Board. Under his command, a lot of prestigious projects related to Water and Sewer were introduced 
+                  and commissioned in Delhi Jal Board such as Maintenance of water and sewerage network Delhi, Rainwater harvesting 
+                  system in Delhi, conceived and implementation of the proposals for treated water and conservation of water, rehabilitation 
+                  and commissioning of sewerage treatment plants, rehabilitation of sewerage lines. <br />
+                  He has joined the company in the capacity of Executive Director (Technical) w.e.f. 01st November 2019.
+                  </p>
+                </div>
+              )}
+            
             </div>
           )}
 
@@ -90,7 +118,7 @@ const Management = () => {
               
               <div className="board-table">
                 <div className="board-row">
-                  <div className="board-name">Mr. Naresh Jain +91 9811047074</div>
+                  <div className="board-name">Mr. Naresh Jain</div>
                   <div className="board-title">Chairman</div>
                 </div>
                 <div className="board-row">
@@ -142,48 +170,48 @@ const Management = () => {
               <div className="structure-table">
                 <div className="structure-row">
                   <div className="position">(i)</div>
-                  <div className="role">Director</div>
-                  <div className="count">(3)</div>
+                  <div className="role">Director - 3</div>
+                  <div className="count"></div>
                 </div>
                 <div className="structure-row">
                   <div className="position">(ii)</div>
-                  <div className="role">General Manager (Admn.)</div>
-                  <div className="count">(1)</div>
+                  <div className="role">General Manager (Admn.) - 1</div>
+                  <div className="count"></div>
                 </div>
                 <div className="structure-row">
                   <div className="position">(iii)</div>
-                  <div className="role">Administrative Officer</div>
-                  <div className="count">(1)</div>
+                  <div className="role">Administrative Officer - 1</div>
+                  <div className="count"></div>
                 </div>
                 <div className="structure-row">
                   <div className="position">(iv)</div>
-                  <div className="role">Office Superintendent</div>
-                  <div className="count">(1)</div>
+                  <div className="role">Office Superintendent - 1</div>
+                  <div className="count"></div>
                 </div>
                 <div className="structure-row">
                   <div className="position">(iv)</div>
-                  <div className="role">Draftsman</div>
-                  <div className="count">(4)</div>
+                  <div className="role">Draftsman - 4</div>
+                  <div className="count"></div>
                 </div>
                 <div className="structure-row">
                   <div className="position">(vi)</div>
-                  <div className="role">Computer Operator</div>
-                  <div className="count">(2)</div>
+                  <div className="role">Computer Operator - 2</div>
+                  <div className="count"></div>
                 </div>
                 <div className="structure-row">
                   <div className="position">(vii)</div>
-                  <div className="role">Typist</div>
-                  <div className="count">(4)</div>
+                  <div className="role">Typist - 4</div>
+                  <div className="count"></div>
                 </div>
                 <div className="structure-row">
                   <div className="position">(viii)</div>
-                  <div className="role">Clerks</div>
-                  <div className="count">(6)</div>
+                  <div className="role">Clerks - 6</div>
+                  <div className="count"></div>
                 </div>
                 <div className="structure-row">
-                  <div className="position">(e)</div>
-                  <div className="role">Helpers</div>
-                  <div className="count">(185)</div>
+                  <div className="position">(ix)</div>
+                  <div className="role">Helpers - 185</div>
+                  <div className="count"></div>
                 </div>
               </div>
               
@@ -192,13 +220,13 @@ const Management = () => {
               <div className="structure-table">
                 <div className="structure-row">
                   <div className="position">(i)</div>
-                  <div className="role">Head Consultant</div>
-                  <div className="count">(1)</div>
+                  <div className="role">Head Consultant - 1</div>
+                  <div className="count"></div>
                 </div>
                 <div className="structure-row">
                   <div className="position">(ii)</div>
-                  <div className="role">Consultants</div>
-                  <div className="count">(2)</div>
+                  <div className="role">Consultants - 2</div>
+                  <div className="count"></div>
                 </div>
               </div>
               
@@ -207,38 +235,38 @@ const Management = () => {
               <div className="structure-table">
                 <div className="structure-row">
                   <div className="position">(i)</div>
-                  <div className="role">Director</div>
-                  <div className="count">(1)</div>
+                  <div className="role">Director - 1</div>
+                  <div className="count"></div>
                 </div>
                 <div className="structure-row">
                   <div className="position">(ii)</div>
-                  <div className="role">Chartered Accountant</div>
-                  <div className="count">(1)</div>
+                  <div className="role">Chartered Accountant - 1</div>
+                  <div className="count"></div>
                 </div>
                 <div className="structure-row">
                   <div className="position">(iii)</div>
-                  <div className="role">Manager (F & A)</div>
-                  <div className="count">(1)</div>
+                  <div className="role">Manager (F & A) - 1</div>
+                  <div className="count"></div>
                 </div>
                 <div className="structure-row">
                   <div className="position">(iv)</div>
-                  <div className="role">Accounts Officers</div>
-                  <div className="count">(1)</div>
+                  <div className="role">Accounts Officers - 1</div>
+                  <div className="count"></div>
                 </div>
                 <div className="structure-row">
                   <div className="position">(v)</div>
-                  <div className="role">Accountant</div>
-                  <div className="count">(1)</div>
+                  <div className="role">Accountant - 1</div>
+                  <div className="count"></div>
                 </div>
                 <div className="structure-row">
                   <div className="position">(vi)</div>
-                  <div className="role">Cashier</div>
-                  <div className="count">(1)</div>
+                  <div className="role">Cashier - 1</div>
+                  <div className="count"></div>
                 </div>
                 <div className="structure-row">
                   <div className="position">(vii)</div>
-                  <div className="role">Asstt. Cashier</div>
-                  <div className="count">(1)</div>
+                  <div className="role">Asstt. Cashier - 1</div>
+                  <div className="count"></div>
                 </div>
               </div>
             </div>
@@ -248,7 +276,7 @@ const Management = () => {
         <div className="sidebar">
           <h2>ABOUT US</h2>
           <div className="sidebar-menu">
-            <Link to="/about-us/company-summary" className="sidebar-item">
+            <Link to="/company-summary" className="sidebar-item">
               Company Summary
               <span className="chevron"><FaChevronRight /></span>
             </Link>
@@ -256,7 +284,7 @@ const Management = () => {
               Management
               <span className="chevron"><FaChevronRight /></span>
             </Link>
-            <Link to="/about-us/projects" className="sidebar-item">
+            <Link to="/projects" className="sidebar-item">
               Projects
               <span className="chevron"><FaChevronRight /></span>
             </Link>
@@ -268,7 +296,7 @@ const Management = () => {
               Consultation Wing
               <span className="chevron"><FaChevronRight /></span>
             </Link>
-            <Link to="/about-us/testimonials" className="sidebar-item">
+            <Link to="/testimonial" className="sidebar-item">
               Testimonials and Certificates
               <span className="chevron"><FaChevronRight /></span>
             </Link>

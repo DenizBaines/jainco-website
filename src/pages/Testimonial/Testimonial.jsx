@@ -20,6 +20,8 @@ const certificates = [
     'cert16.jpg',
     'cert17.jpg',
     'cert18.jpg',
+    'cert19.jpg',
+    'cert20.jpg',
    
 ];
 

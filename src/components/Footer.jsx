@@ -32,17 +32,18 @@ const Footer = () => {
           <h3>CONTACT US</h3>
           <p className="contact-info">
             <strong>Registered Office:</strong> 3-5, First Floor, L.S.C., 
-            BQ Block, DDA Market, Shalimar Bagh
-            Delhi-110 088
+            BQ Block, DDA Market, Shalimar Bagh, Delhi-110088
           </p>
           <p className="contact-info">
             <strong>Telephone:</strong> (0) 011-27478097, 011-27479430, 011-27478800
           </p>
-          <p className="contact-info" style={{color: 'black'}}>
-            <strong>E-Mail:</strong> <a href='info@jaincogroup.com'>info@jaincogroup.com</a>
-          </p>
+          <div className="info-iso">
           <p className="contact-info">
-            <strong>WEBSITE:</strong> <a href='www.jaincogroup.com'>www.jaincogroup.com</a>
+            <strong>E-Mail:</strong> info@jaincogroup.com
+          </p>
+          </div>
+          <p className="contact-info">
+            <strong>WEBSITE:</strong> www.jaincogroup.com
           </p>
         </div>
         
@@ -50,8 +51,8 @@ const Footer = () => {
           <h3>WHAT WE DO</h3>
           <p>
             We are experts in all water management and related services.
-            Know exactly how we can help you. 
-            <a href="/services" className="learn-more">Find out more</a>
+            You Know exactly how we can help you! 
+            
           </p>
         </div>
       </div>
