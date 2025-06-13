@@ -1,224 +1,411 @@
+/* Management Container */
+.management-container {
+  min-height: 100vh;
+  background: #B2FFFF;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .management-page {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+  max-width: 1200px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  animation: fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Page Title */
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.page-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #2c3e2c;
+  border-radius: 2px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.tab {
+  padding: 1rem 2rem;
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #6c757d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tab::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #B2FF;
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.tab:hover {
+  color: #495057;
+  border-color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+}
+
+.tab.active {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  color: white;
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.tab.active::before {
+  left: 0;
+}
+
+/* Tab Content */
+.tab-content {
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Key People Section */
+.key-people-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.person-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.person-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.person-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  transition: background 0.3s ease;
+}
+
+.person-header:hover {
+  background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+}
+
+.person-info h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+}
+
+.person-info .position {
+  font-size: 1rem;
+  color: #667eea;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.expand-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.expand-icon:hover {
+  transform: scale(1.1);
+}
+
+.person-content {
+  padding: 2rem;
+  background: white;
+  border-top: 1px solid #e9ecef;
+}
+
+.person-content p {
+  line-height: 1.8;
+  color: #495057;
+  margin: 0;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+/* Company Structure Section */
+.company-structure-section {
+  width: 100%;
+}
+
+.structure-grid {
+  display: flow;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.structure-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.structure-card.full-width {
+  grid-column: 1 / -1;
+}
+
+.structure-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.structure-card h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.structure-card h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* Modern Tables */
+.table-container {
+  overflow-x: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.modern-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.modern-table thead {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.modern-table thead th {
+  padding: 1.2rem;
+  color: black;
+  font-weight: 600;
+  text-align: left;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.modern-table tbody tr {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.modern-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.modern-table tbody tr:hover {
+  background-color: #f8f9fa;
+  transform: scale(1.01);
+}
+
+.modern-table tbody td {
+  padding: 1rem 1.2rem;
+  color: #495057;
+  font-size: 0.95rem;
+  vertical-align: middle;
+}
+
+.number-cell {
+  text-align: center;
+  font-weight: 600;
+  color: #667eea;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .management-page {
+    padding: 2rem;
   }
   
-  .page-content {
-    display: flex;
-    gap: 30px;
+  .structure-grid {
+    grid-template-columns: 1fr;
   }
   
-  .management-content {
-    flex: 1;
-    background-color: #f9f9f9;
-    border-radius: 4px;
+  .structure-card.full-width {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .management-container {
+    padding: 1rem;
+  }
+  
+  .management-page {
+    padding: 1.5rem;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
   
   .tabs {
-    display: flex;
-    gap: 0;
-    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 0.5rem;
   }
   
   .tab {
-    padding: 15px 30px;
-    background-color: #f0f0f0;
-    color: #333;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 16px;
-    font-weight: 500;
-    transition: background-color 0.3s;
-    cursor: pointer;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
   }
   
-  .tab.active {
-    background-color: #4a9cff;
-    color: white;
+  .person-header {
+    padding: 1rem 1.5rem;
   }
   
-  .tab svg {
-    font-size: 14px;
+  .person-info h3 {
+    font-size: 1.1rem;
   }
   
-  /* Key People tab styles */
-  .management-list {
-    padding: 10px 20px;
+  .person-info .position {
+    font-size: 0.9rem;
   }
   
-  .management-item {
-    display: flex;
-    align-items: center;
-    padding: 15px 0;
-    border-bottom: 1px solid #ddd;
+  .person-content {
+    padding: 1.5rem;
   }
   
-  .management-item:last-child {
-    border-bottom: none;
+  .structure-card {
+    padding: 1.5rem;
   }
   
-  .expand-icon {
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 15px;
-    border: 1px solid #333;
-    cursor: pointer;
+  .structure-card h2 {
+    font-size: 1.3rem;
   }
   
-  .management-item h3 {
-    font-size: 16px;
-    font-weight: 500;
-    margin: 0;
+  .modern-table thead th,
+  .modern-table tbody td {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .management-page {
+    padding: 1rem;
   }
   
-  .management-item-content {
-    padding: 0 0 20px 40px;
-    border-bottom: 1px solid #ddd;
-    text-align: justify;
+  .page-title {
+    font-size: 1.8rem;
   }
   
-  .management-item-content p {
-    line-height: 1.6;
-    color: #444;
-    margin: 0;
+  .person-header {
+    padding: 1rem;
   }
   
-  /* Company Structure tab styles */
-  .company-structure {
-    padding: 10px 20px;
+  .person-info h3 {
+    font-size: 1rem;
   }
   
-  .company-structure h2 {
-    font-size: 18px;
-    margin: 30px 0 15px;
-    font-weight: 600;
+  .person-content {
+    padding: 1rem;
   }
   
-  .company-structure h3 {
-    font-size: 16px;
-    margin: 20px 0 15px;
-    font-weight: 600;
+  .structure-card {
+    padding: 1rem;
   }
   
-  .board-table, .structure-table {
-    width: 100%;
-    border-collapse: collapse;
+  .modern-table thead th,
+  .modern-table tbody td {
+    padding: 0.6rem;
+    font-size: 0.85rem;
   }
-  
-  .board-row, .structure-row {
-    display: flex;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .board-name {
-    flex: 1;
-    padding: 15px 10px;
-  }
-  
-  .board-title {
-    flex: 1;
-    padding: 15px 10px;
-  }
-  
-  .position {
-    width: 50px;
-    padding: 12px 10px;
-    text-align: left;
-  }
-  
-  .role {
-    flex: 1;
-    padding: 12px 10px;
-    text-align: left;
-  }
-  
-  .count {
-    width: 80px;
-    text-align: right;
-    padding: 12px 10px;
-    flex-wrap: nowrap;
-  }
-  
-  /* Sidebar styles */
-  .sidebar {
-    width: 300px;
-    flex-shrink: 0;
-  }
-  
-  .sidebar h2 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #333;
-    font-weight: 500;
-  }
-  
-  .sidebar-menu {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .sidebar-item {
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
-    color: #333;
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background-color 0.3s;
-  }
-  
-  .sidebar-item:hover {
-    background-color: #f5f5f5;
-  }
-  
-  .sidebar-item.active {
-    background-color: #f5f5f5;
-    font-weight: 500;
-  }
-  
-  .chevron {
-    color: #4a9cff;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 992px) {
-    .page-content {
-      flex-direction: column;
-    }
-    
-    .sidebar {
-      width: 100%;
-      margin-top: 30px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .tabs {
-      flex-direction: column;
-    }
-    
-    .board-row, .structure-row {
-      flex-direction: column;
-    }
-    
-    .board-name, .board-title, .position, .role, .count {
-      width: 100%;
-      padding: 8px 10px;
-    }
-    
-    .count {
-      text-align: left;
-    }
-    
-    .position {
-      font-weight: bold;
-    }
-  }
+}

@@ -98,7 +98,7 @@ const NavigationBar = () => {
 
       <div className="navbar-search-area">
         <button className="search-it-button" onClick={() => setSearchOpen(!searchOpen)}>
-          Search It
+          Search
         </button>
 
         {searchOpen && (

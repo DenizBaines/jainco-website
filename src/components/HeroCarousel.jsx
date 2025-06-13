@@ -15,7 +15,10 @@ const HeroCarousel = () => {
       id: 1,
       imgSrc: photo1,
       alt: 'Project 1',
-      text: "WELCOME TO JAINCO BUILDCON INDIA'S TOP WATER MANAGEMENT COMPANY",
+      text: (<>
+                WELCOME TO JAINCO BUILDCON <br />
+                INDIA'S TOP WATER MANAGEMENT COMPANY
+             </>),
     },
     {
       id: 2,
@@ -31,17 +34,26 @@ const HeroCarousel = () => {
     },
   ];
 
+  const nextSlide = () => {
+    if (!isTransitioning) {
+      setIsTransitioning(true);
+      setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+      setTimeout(() => setIsTransitioning(false), 700);
+      resetInterval();
+    }
+  };
+
   useEffect(() => {
     slideIntervalRef.current = setInterval(() => {
       nextSlide();
-    }, 5000);
+    }, 9000);
 
     return () => {
       if (slideIntervalRef.current) {
         clearInterval(slideIntervalRef.current);
       }
     };
-  }, [currentSlide]);
+  }, );
 
   const resetInterval = () => {
     if (slideIntervalRef.current) {
@@ -52,14 +64,7 @@ const HeroCarousel = () => {
     }
   };
 
-  const nextSlide = () => {
-    if (!isTransitioning) {
-      setIsTransitioning(true);
-      setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-      setTimeout(() => setIsTransitioning(false), 700);
-      resetInterval();
-    }
-  };
+  
 
   const prevSlide = () => {
     if (!isTransitioning) {

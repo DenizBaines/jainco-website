@@ -1,6 +1,6 @@
 import React from 'react';
 import './CompanySummary.css';
-import { Link } from 'react-router-dom';
+
 
 const CompanySummary = () => {
   return (
@@ -11,14 +11,18 @@ const CompanySummary = () => {
           [ JAINCO BUILDCON PRIVATE LIMITED ] <br />
           <span>(FORMERLY JAINCO BUILDCON LIMITED)</span>
         </h1>
-        <Link
-          to="https://jaincogroup.com/wp-content/uploads/2023/ISO%20Certificate.pdf"
-          className="iso-button"
-          target="_blank"
-          rel="noopener noreferrer"
+       
+        <a
+        href="/iso/certificate.pdf"
+        className="iso-button"
+        target="_blank"
+        rel="noopener noreferrer"
         >
-          AN ISO 9001-2015 CO.
-        </Link>
+         AN ISO 9001-2015 CO.
+        </a>
+
+     
+     
       </div>
 
       <div className="company-content">

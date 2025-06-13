@@ -191,6 +191,7 @@ body {
     gap: 0;
     background-color: #82eeFD;
     padding: 10px 0;
+    
   }
 
   .navbar-menu.active {
@@ -206,13 +207,15 @@ body {
   .navbar-item:hover .dropdown-menu {
     position: relative;
     box-shadow: none;
-    border-radius: 0;
+    border-radius: 18px;
     padding-left: 20px;
     background: #f9f9f9;
+
   }
 
   .dropdown-menu {
     display: none;
+    margin: 10px 10px
   }
 
   .navbar-item:hover .dropdown-menu {
