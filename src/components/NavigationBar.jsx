@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./NavigationBar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Final hardcoded search list with correct links
   const pageNames = [
     { name: "Home", link: "/" },
     { name: "Careers", link: "/careers" },
@@ -59,15 +59,18 @@ const NavigationBar = () => {
   );
 
   const handleSearchNavigate = (page) => {
-    window.location.href = page.link;
-  };
+  setSearchOpen(false);          // Close the search dropdown
+  setSearchTerm("");             // Clear the input field
+  window.location.href = `#${page.link}`;  // Navigate to the selected page
+};
+
 
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <a href="/">
+        <Link to="/">
           <img src="/images/logo.png" alt="Logo" />
-        </a>
+        </Link>
       </div>
 
       <div className="navbar-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -78,7 +81,7 @@ const NavigationBar = () => {
         {menuItems.map((item, index) => (
           <li key={index} className="navbar-item">
             {item.link ? (
-              <a href={item.link}>{item.name}</a>
+              <Link to={item.link}>{item.name}</Link>
             ) : (
               <span>{item.name}</span>
             )}
@@ -86,9 +89,9 @@ const NavigationBar = () => {
             {item.dropdown && (
               <div className="dropdown-menu">
                 {item.dropdown.map((subItem, idx) => (
-                  <a key={idx} className="dropdown-item" href={subItem.link}>
+                  <Link key={idx} className="dropdown-item" to={subItem.link}>
                     {subItem.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             )}

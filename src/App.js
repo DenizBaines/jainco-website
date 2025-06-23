@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import NavigationBar from './components/NavigationBar';
 import Footer from './components/Footer';
 import InfoCardsSection from './components/InfoCardsSection';
@@ -32,7 +32,7 @@ import Projects from './pages/Projects/Projects';
 function App() {
   return (
     
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
     
       <div className="App">
@@ -70,7 +70,7 @@ function App() {
         <Footer />
       </div>
 
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
